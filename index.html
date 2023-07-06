@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./music-note.png" type="image/x-icon">
+  </head>
+  <body>
+    <nav>
+      <ul class="ul-list">
+        <h1 class="logo">Kayumkhan_kks</h1>
+        <div class="list-item">
+          <li class="list">Home</li>
+          <li class="list">About</li>
+          <li class="list">Contact</li>
+          <li class="list">Social Account</li>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="main-card">
+       <div class="sondInfo all"> 
+       <div class="search-bar">
+        <!-- <div class="search" >
+          <input id="search" onkeyup="search_song()" type="text" placeholder="Song name" />
+        </div> -->
+     <div class="bar">
+      <form onsubmit="event.preventDefault();" role="search">
+        <label for="search">Search for stuff</label>
+        <input id="search" onkeyup="search_song()" type="search" placeholder="Search..." autofocus required />
+        <button type="submit">Go</button>    
+      </form>
+     </div>
+        <div class="Side-next side" id="search-song-list">
+         
+        </div>
+       </div>
+      </div>  
+  
+      <div class="player all">
+      </div>
+
+       <div class="songlist all" >
+        <div class="song-item">
+          <div class="list-title">
+            <h1>My PlayList</h1>
+          </div>
+          <div id="songlist">
+         
+           
+          </div>
+        </div>
+      </div> 
+    </div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+   
+  </body>
+</html>
